@@ -15,14 +15,21 @@
             <div class="board">
             </div>
             <div class="buttons">
-                <button>Black</button>
-                <button>White</button>
-                <button>Random</button>
+                <button onclick="changeColor('black')">Black</button>
+                <button onclick="changeColor('white')">Erasor</button>
+                <button onclick="changeColor('grey')">Grey</button>
+                <button onclick="changeColor('random')">Random</button>
+                <button onclick="resetBoard()">Reset Board</button>
                 <button>Reset</button>
             </div>
-            <div type="text" placeholder="Size of Board" value="16">
+            <div>
+            <input 
+            type="text" 
+            placeholder="Size of Board" 
+            value="16" 
+            onchange="changeSize(this.value)"
+            />
                 <button>Set Size</button>
-
             </div>
         </div>
     </div>
